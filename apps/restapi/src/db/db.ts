@@ -1,6 +1,6 @@
 import { Low } from "lowdb";
 import { JSONFile } from 'lowdb/node'
-import lodash from 'lodash'
+import * as lodash from 'lodash'
 export type role = 'admin'|'user'
 export type User={
     id:string;
