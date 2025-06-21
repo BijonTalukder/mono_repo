@@ -18,6 +18,28 @@
     "@ocmo/typescript-config":"workspace:*",
     "@ocmo/eslint-config":"workspace:*"
   },
+  "exports": {
+  ".": {
+    "types": "./dist/index.d.ts",
+    "require": "./dist/index.js"
+  },
+  "./repositories/*": {
+    "require": "./dist/repositories/*.js",
+    "types": "./dist/repositories/*.d.ts"
+  },
+  "./use-cases/*": {
+    "require": "./dist/use-cases/*.js",
+    "types": "./dist/use-cases/*.d.ts"
+  },
+  "./libs/*": {
+    "require": "./dist/libs/*.js",
+    "types": "./dist/libs/*.d.ts"
+  },
+  "./entities/*": {
+    "require": "./dist/entities/*.js",
+    "types": "./dist/entities/*.d.ts"
+  }
+},
   "keywords": [],
   "author": "",
   "license": "ISC"
