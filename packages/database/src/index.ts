@@ -1,0 +1,1 @@
+export * from './adapters/in-memory/impl_user.repository'
